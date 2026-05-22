@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="supported-color-schemes" content="dark light" />
+  <title>Alberta Diesel Day 2026 — ShopView is a Proud Sponsor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet" />
+  <!--[if mso]>
+  <style type="text/css">
+    body, table, td, div, p, a { font-family: Arial, Helvetica, sans-serif !important; }
+    .hero-headline { font-family: 'Arial Black', Arial, sans-serif !important; }
+  </style>
+  <![endif]-->
+  <style>
+    /* ── ShopView Design System Tokens ── */
+    :root {
+      --sv-brand-blue:      #257CFF;
+      --sv-brand-blue-dark: #175CD3;
+      --sv-primary-50:      #E9F5FF;
+      --sv-primary-100:     #D8ECFF;
+      --sv-primary-300:     #82C1FB;
+      --sv-primary-500:     #257CFF;
+      --sv-primary-700:     #175CD3;
+      --sv-primary-800:     #0B254D;
+      --sv-grey-400:        #9AA4B2;
+      --sv-grey-500:        #697586;
+      --sv-grey-600:        #4B5565;
+      --sv-grey-700:        #364152;
+      --sv-grey-800:        #202939;
+      --sv-grey-900:        #121926;
+      --sv-success-500:     #16B364;
+      --sv-success-100:     #D3F8DF;
+      --sv-success-700:     #087443;
+      --sv-warning-400:     #FDB022;
+      --sv-white:           #FFFFFF;
+      --sv-radius-sm:       6px;
+      --sv-radius-md:       8px;
+      --sv-radius-lg:       12px;
+      --sv-shadow-md:       0 4px 8px rgba(11,23,51,0.18), 0 1px 2px rgba(11,23,51,0.10);
+      --sv-shadow-lg:       0 12px 24px rgba(11,23,51,0.28), 0 4px 8px rgba(11,23,51,0.12);
+      --sv-font-ui:         'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #202939;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-size: 14px;
+      line-height: 20px;
+      color: #9AA4B2;
+    }
+
+    img {
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a { color: #257CFF; text-decoration: none; }
+
+    /* ── Email wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      background: #202939;
+      padding: 32px 16px;
+    }
+
+    .email-body {
+      max-width: 620px;
+      margin: 0 auto;
+      background: #121926;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(11,23,51,0.28), 0 4px 8px rgba(11,23,51,0.12);
+      border: 1px solid #364152;
+    }
+
+    /* ── TOP STRIPE ── */
+    .top-stripe {
+      background: #257CFF;
+      text-align: center;
+      padding: 10px 24px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.95);
+      text-transform: uppercase;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background-color: #121926;
+      background-image: url('uploads/mhbd-Edit.jpg');
+      background-size: cover;
+      background-position: center 40%;
+      background-repeat: no-repeat;
+      padding: 52px 44px 48px;
+      position: relative;
+      overflow: hidden;
+      min-height: 320px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+      background: linear-gradient(
+        165deg,
+        rgba(18,25,38,0.78) 0%,
+        rgba(18,25,38,0.48) 45%,
+        rgba(18,25,38,0.88) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+    }
+
+    /* Logo row */
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .logo-shopview {
+      height: 46px;
+      width: auto;
+    }
+
+    .logo-divider {
+      width: 1px;
+      height: 36px;
+      background: rgba(255,255,255,0.2);
+      flex-shrink: 0;
+    }
+
+    .logo-mhpd {
+      height: 46px;
+      width: 46px;
+      object-fit: contain;
+    }
+
+    .logo-add {
+      height: 92px;
+      width: auto;
+      margin-left: -10px;
+    }
+
+    /* Sponsor badge */
+    .sponsor-badge {
+      display: inline-block;
+      background: #257CFF;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* Hero headline */
+    .hero-headline {
+      font-family: 'Barlow Condensed', 'Arial Black', Arial, sans-serif;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.0;
+      color: #FFFFFF;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+
+    .hero-headline em {
+      font-style: normal;
+      color: #FFFFFF;
+    }
+
+    /* Date row */
+    .hero-date-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .date-pill {
+      background: #257CFF;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 10px 22px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .venue-text {
+      color: rgba(255,255,255,0.6);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .venue-text strong {
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+      display: block;
+    }
+
+    /* ── INTRO SECTION ── */
+    .intro-section {
+      padding: 36px 44px;
+      background: #121926;
+      border-bottom: 1px solid #364152;
+    }
+
+    .intro-section p {
+      color: #9AA4B2;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .intro-section p + p {
+      margin-top: 14px;
+    }
+
+    .intro-section p strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* ── HIGHLIGHTS ── */
+    .highlights-section {
+      background: #202939;
+      padding: 36px 44px;
+    }
+
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #257CFF;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .highlights-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .hl-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: #121926;
+      border: 1px solid #364152;
+      padding: 14px 16px;
+      border-radius: 8px;
+    }
+
+    .hl-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+
+    .hl-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+
+    .hl-sub {
+      font-size: 12px;
+      color: #697586;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    /* ── KIDS FREE ── */
+    .kids-strip {
+      background: rgba(16,116,99,0.12);
+      border-top: 1px solid rgba(16,116,99,0.25);
+      border-bottom: 1px solid rgba(16,116,99,0.25);
+      padding: 16px 44px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .kids-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .kids-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #73E2A3;
+    }
+
+    .kids-sub {
+      font-size: 12px;
+      color: #697586;
+      margin-top: 2px;
+    }
+
+    /* ── BOOTH SECTION ── */
+    .booth-section {
+      background: #121926;
+      padding: 36px 44px;
+      border-top: 1px solid #364152;
+    }
+
+    .booth-card {
+      background: rgba(37,124,255,0.06);
+      border: 1px solid #257CFF;
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .booth-icon-wrap {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      background: rgba(37,124,255,0.15);
+      border: 1px solid rgba(37,124,255,0.3);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    .booth-content { flex: 1; min-width: 0; }
+
+    .booth-eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #257CFF;
+      margin-bottom: 4px;
+    }
+
+    .booth-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .booth-body {
+      font-size: 14px;
+      color: #9AA4B2;
+      line-height: 1.65;
+    }
+
+    .booth-body p + p {
+      margin-top: 10px;
+    }
+
+    .booth-body strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #202939;
+      border-top: 1px solid #364152;
+      padding: 28px 44px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      height: 24px;
+      width: auto;
+      margin: 0 auto 10px;
+      opacity: 0.85;
+    }
+
+    .footer-tagline {
+      font-size: 12px;
+      color: #9AA4B2;
+      margin-bottom: 14px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #257CFF;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .footer-legal {
+      margin-top: 16px;
+      font-size: 11px;
+      color: #697586;
+      line-height: 1.7;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      height: 1px;
+      background: #364152;
+    }
+
+    /* ── Responsive: tablet/medium ── */
+    @media only screen and (max-width: 640px) {
+      .email-wrapper { padding: 20px 12px; }
+      .hero { padding: 44px 36px 40px; }
+      .hero-headline { font-size: 52px; }
+      .intro-section,
+      .highlights-section,
+      .booth-section,
+      .footer { padding-left: 36px; padding-right: 36px; }
+      .kids-strip { padding-left: 36px; padding-right: 36px; }
+    }
+
+    /* ── Responsive: phones ── */
+    @media only screen and (max-width: 520px) {
+      .email-wrapper { padding: 16px 8px; }
+      .top-stripe { font-size: 10px; padding: 10px 16px; letter-spacing: 0.04em; }
+      .hero { padding: 36px 24px 32px; min-height: 260px; align-items: flex-start; }
+      .hero-headline { font-size: 38px; line-height: 1.02; }
+      .logo-row { gap: 12px; margin-bottom: 24px; }
+      .logo-shopview { height: 38px; }
+      .logo-mhpd { height: 38px; width: 38px; }
+      .logo-add { height: 72px; margin-left: -8px; }
+      .logo-divider { height: 30px; }
+      .sponsor-badge { font-size: 8px; padding: 4px 9px; }
+      .date-pill { font-size: 14px; padding: 9px 18px; }
+      .venue-text { font-size: 12px; }
+      .intro-section,
+      .highlights-section,
+      .booth-section,
+      .footer { padding-left: 24px; padding-right: 24px; padding-top: 28px; padding-bottom: 28px; }
+      .intro-section p { font-size: 14px; }
+      .kids-strip { padding: 14px 24px; }
+      .highlights-list { grid-template-columns: 1fr; gap: 8px; }
+      .section-title { font-size: 20px; }
+      .booth-card { padding: 18px; gap: 14px; }
+      .booth-title { font-size: 16px; }
+      .booth-body { font-size: 13px; }
+      .footer-links { gap: 16px; }
+    }
+
+    /* ── Responsive: very small phones ── */
+    @media only screen and (max-width: 380px) {
+      .hero { padding: 28px 18px 28px; }
+      .hero-headline { font-size: 30px; }
+      .logo-row { gap: 8px; }
+      .logo-divider { display: none; }
+      .logo-shopview { height: 32px; }
+      .logo-mhpd { height: 32px; width: 32px; }
+      .logo-add { height: 60px; margin-left: -6px; }
+      .date-pill { font-size: 13px; padding: 8px 14px; }
+      .intro-section,
+      .highlights-section,
+      .booth-section,
+      .footer { padding-left: 18px; padding-right: 18px; }
+      .kids-strip { padding: 12px 18px; }
+      .booth-card { padding: 14px; flex-direction: column; }
+      .booth-icon-wrap { width: 40px; height: 40px; font-size: 18px; }
+    }
+
+    /* ── Dark-mode hints for clients that honor color-scheme ── */
+    @media (prefers-color-scheme: light) {
+      /* Email is intentionally dark in both schemes — keep brand consistency */
+      body, .email-wrapper { background: #202939 !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Inbox preview text -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;color:#121926;font-size:1px;line-height:1px;opacity:0;">
+    ShopView is a proud Event Sponsor of Alberta Diesel Day — June 27 &amp; 28 at RAD Torque Raceway. We'd love to see you there!
+  </div>
+
+  <div class="email-wrapper">
+    <div class="email-body">
+
+      <!-- TOP STRIPE -->
+      <div class="top-stripe">
+        June 27 &amp; 28, 2026 &nbsp;·&nbsp; RAD Torque Raceway &nbsp;·&nbsp; Edmonton, AB
+      </div>
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-content">
+
+          <div class="logo-row">
+            <img class="logo-shopview" src="uploads/ShopView.svg" alt="ShopView" />
+            <div class="logo-divider"></div>
+            <img class="logo-mhpd" src="uploads/MHPD Logo no bg.png" alt="Mario High Performance Diesel" />
+            <div class="logo-divider"></div>
+            <img class="logo-add" src="uploads/Lettering Only.png" alt="Alberta Diesel Day" />
+          </div>
+
+          <div class="sponsor-badge">★ &nbsp; Proud Event Sponsor &nbsp; ★</div>
+
+          <h1 class="hero-headline">
+            WE'LL SEE YOU<br /><em>AT THE TRACK.</em>
+          </h1>
+
+          <div class="hero-date-row">
+            <div class="date-pill">June 27–28 / 2026</div>
+            <div class="venue-text">
+              <strong>RAD Torque Raceway</strong>
+              Edmonton International Airport Area
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- INTRO -->
+      <div class="intro-section">
+        <p>
+          We're excited to share that <strong>ShopView is a proud sponsor of Alberta Diesel Day 2026</strong> - Western Canada's biggest diesel motorsport event, put on by the team at Mario High Performance Diesel.
+        </p>
+        <p>
+          The event takes place <strong>June 27 &amp; 28 at RAD Torque Raceway</strong> near Edmonton - a full weekend of diesel-powered action, great food, cold drinks, and good company. We'll have the <strong>ShopView team and booth on-site all weekend</strong>, and we'd love for you to stop by.
+        </p>
+        <p>
+          Whether you're bringing the family or just coming for the action - swing by the ShopView booth and say hello.
+        </p>
+      </div>
+
+      <!-- HIGHLIGHTS -->
+      <div class="highlights-section">
+        <div class="section-eyebrow">What's On</div>
+        <div class="section-title">A Full Weekend of Diesel</div>
+
+        <div class="highlights-list">
+          <div class="hl-item">
+            <div class="hl-icon">🏁</div>
+            <div>
+              <div class="hl-label">Drag Racing</div>
+              <div class="hl-sub">Semis &amp; pickups head-to-head</div>
+            </div>
+          </div>
+
+          <div class="hl-item">
+            <div class="hl-icon">💨</div>
+            <div>
+              <div class="hl-label">Burnout Competition</div>
+              <div class="hl-sub">Brand new for 2026</div>
+            </div>
+          </div>
+
+          <div class="hl-item">
+            <div class="hl-icon">🚛</div>
+            <div>
+              <div class="hl-label">Show 'n' Shine</div>
+              <div class="hl-sub">The finest diesel builds on display</div>
+            </div>
+          </div>
+
+          <div class="hl-item">
+            <div class="hl-icon">🏆</div>
+            <div>
+              <div class="hl-label">Sled Pulling</div>
+              <div class="hl-sub">Raw horsepower vs. the sled</div>
+            </div>
+          </div>
+
+          <div class="hl-item">
+            <div class="hl-icon">🍺</div>
+            <div>
+              <div class="hl-label">5 Food Trucks</div>
+              <div class="hl-sub">Beer, beverages &amp; more on-site</div>
+            </div>
+          </div>
+
+          <div class="hl-item">
+            <div class="hl-icon">🎵</div>
+            <div>
+              <div class="hl-label">Live Music</div>
+              <div class="hl-sub">Amber Haydey &amp; Karac Hendriks</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KIDS FREE -->
+      <div class="kids-strip">
+        <div class="kids-icon">👶</div>
+        <div>
+          <div class="kids-label">Kids 12 &amp; Under — Free Admission</div>
+          <div class="kids-sub">Bring the whole family. Entertainment on-site all weekend.</div>
+        </div>
+      </div>
+
+      <!-- BOOTH -->
+      <div class="booth-section">
+        <div class="section-eyebrow">Come find us on-site</div>
+        <div class="section-title">Visit the ShopView Booth</div>
+        <div class="booth-card">
+          <div class="booth-icon-wrap">🔧</div>
+          <div class="booth-content">
+            <div class="booth-eyebrow">ShopView — On-site all weekend</div>
+            <div class="booth-title">We'll Be There Saturday &amp; Sunday</div>
+            <div class="booth-body">
+              <p>
+                The <strong>ShopView team will be at the event both days</strong> - June 27 &amp; 28. Stop by our booth, say hello, and see what we've been building. There'll always be a familiar face around.
+              </p>
+              <p>
+                This is a great chance to connect with us outside the screen - come chat, ask questions, and enjoy the weekend alongside us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <img class="footer-logo" src="uploads/ShopView.svg" alt="ShopView" />
+        <div class="footer-tagline">Proud Sponsor of Alberta Diesel Day 2026</div>
+
+        <div class="footer-links">
+          <a href="https://shopview.com" target="_blank" rel="noopener">shopview.com</a>
+          <a href="https://albertadieselday.com" target="_blank" rel="noopener">albertadieselday.com</a>
+        </div>
+
+        <div class="footer-legal">
+          You're receiving this email as a customer or contact of ShopView.<br />
+          © 2026 ShopView. All rights reserved.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
