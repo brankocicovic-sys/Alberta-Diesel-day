@@ -482,10 +482,19 @@
       .top-stripe { font-size: 10px; padding: 10px 16px; letter-spacing: 0.04em; }
       .hero { padding: 36px 24px 32px; min-height: 260px; align-items: flex-start; }
       .hero-headline { font-size: 52px; line-height: 1.02; }
-      .logo-row { gap: 14px; margin-bottom: 24px; row-gap: 16px; }
-      .logo-shopview { flex-basis: 100%; height: 40px; }
-      .logo-divider-lead { display: none; }
-      .logo-pair { gap: 14px; }
+      .logo-row { gap: 14px; margin-bottom: 24px; row-gap: 16px; justify-content: flex-start; }
+      .logo-shopview { height: 40px; width: auto; align-self: flex-start; }
+      /* Turn the leading divider into an invisible flex-basis break so the
+         pair drops to line 2 while ShopView stays anchored to the left. */
+      .logo-divider-lead {
+        flex-basis: 100%;
+        height: 0;
+        width: 0;
+        background: transparent;
+        border: 0;
+        margin: 0;
+      }
+      .logo-pair { gap: 14px; align-self: flex-start; }
       .logo-mhpd { height: 40px; width: 40px; }
       .logo-add { height: 76px; margin-left: -8px; }
       .logo-divider { height: 32px; }
