@@ -2,9 +2,11 @@
 
 Marketing email for ShopView customers announcing ShopView's sponsorship of Alberta Diesel Day 2026 (June 27 & 28, RAD Torque Raceway, Edmonton, AB).
 
+**Live preview:** https://brankocicovic-sys.github.io/Alberta-Diesel-day/
+
 ## Files
 
-- `Alberta Diesel Day Email - ShopView.html` — the newsletter, self-contained
+- `index.html` — the newsletter, self-contained (served by GitHub Pages)
 - `uploads/` — image assets referenced by the email
   - `ShopView.svg`
   - `MHPD Logo no bg.png`
