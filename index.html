@@ -149,6 +149,13 @@
       flex-wrap: wrap;
     }
 
+    .logo-pair {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-shrink: 0;
+    }
+
     .logo-shopview {
       height: 46px;
       width: auto;
@@ -474,12 +481,14 @@
       .email-wrapper { padding: 16px 8px; }
       .top-stripe { font-size: 10px; padding: 10px 16px; letter-spacing: 0.04em; }
       .hero { padding: 36px 24px 32px; min-height: 260px; align-items: flex-start; }
-      .hero-headline { font-size: 38px; line-height: 1.02; }
-      .logo-row { gap: 12px; margin-bottom: 24px; }
-      .logo-shopview { height: 38px; }
-      .logo-mhpd { height: 38px; width: 38px; }
-      .logo-add { height: 72px; margin-left: -8px; }
-      .logo-divider { height: 30px; }
+      .hero-headline { font-size: 52px; line-height: 1.02; }
+      .logo-row { gap: 14px; margin-bottom: 24px; row-gap: 16px; }
+      .logo-shopview { flex-basis: 100%; height: 40px; }
+      .logo-divider-lead { display: none; }
+      .logo-pair { gap: 14px; }
+      .logo-mhpd { height: 40px; width: 40px; }
+      .logo-add { height: 76px; margin-left: -8px; }
+      .logo-divider { height: 32px; }
       .sponsor-badge { font-size: 8px; padding: 4px 9px; }
       .date-pill { font-size: 14px; padding: 9px 18px; }
       .venue-text { font-size: 12px; }
@@ -500,12 +509,13 @@
     /* ── Responsive: very small phones ── */
     @media only screen and (max-width: 380px) {
       .hero { padding: 28px 18px 28px; }
-      .hero-headline { font-size: 30px; }
-      .logo-row { gap: 8px; }
+      .hero-headline { font-size: 40px; }
+      .logo-row { gap: 10px; row-gap: 14px; }
+      .logo-pair { gap: 10px; }
       .logo-divider { display: none; }
-      .logo-shopview { height: 32px; }
-      .logo-mhpd { height: 32px; width: 32px; }
-      .logo-add { height: 60px; margin-left: -6px; }
+      .logo-shopview { height: 36px; }
+      .logo-mhpd { height: 36px; width: 36px; }
+      .logo-add { height: 64px; margin-left: -6px; }
       .date-pill { font-size: 13px; padding: 8px 14px; }
       .intro-section,
       .highlights-section,
@@ -543,10 +553,12 @@
 
           <div class="logo-row">
             <img class="logo-shopview" src="uploads/ShopView.svg" alt="ShopView" />
-            <div class="logo-divider"></div>
-            <img class="logo-mhpd" src="uploads/MHPD Logo no bg.png" alt="Mario High Performance Diesel" />
-            <div class="logo-divider"></div>
-            <img class="logo-add" src="uploads/Lettering Only.png" alt="Alberta Diesel Day" />
+            <div class="logo-divider logo-divider-lead"></div>
+            <div class="logo-pair">
+              <img class="logo-mhpd" src="uploads/MHPD Logo no bg.png" alt="Mario High Performance Diesel" />
+              <div class="logo-divider"></div>
+              <img class="logo-add" src="uploads/Lettering Only.png" alt="Alberta Diesel Day" />
+            </div>
           </div>
 
           <div class="sponsor-badge">★ &nbsp; Proud Event Sponsor &nbsp; ★</div>
